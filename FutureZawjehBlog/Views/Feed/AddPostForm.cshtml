@@ -1,0 +1,14 @@
+﻿@model Post
+@{
+    ViewData["Title"] = "Add a post";
+}
+
+<div class="panel-heading">@ViewData["Title"]</div>
+
+<div class="form-container">
+    <form asp-action="AddPost" method="post">
+        <lable class="lbl">Title:</lable> <input asp-for="Title" /><br />
+        <lable class="lbl">Content:</lable> <input asp-for="Content" style="height:150px;"/><br />
+        <button type="submit" class="subsub">Add</button>
+    </form>
+</div>

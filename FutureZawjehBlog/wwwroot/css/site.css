@@ -20,3 +20,170 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+@font-face {
+    font-family: "ArabicPoetry";
+    src: url("../lib/fonts/ArabicPoetryExtended-Medium.otf") format("opentype");
+}
+
+/*home page*/
+
+.headhead {
+    font-size: 100pt;
+    font-family: 'ArabicPoetry';
+    color :purple ;
+}
+
+.arabPar {
+    font-size: 60pt;
+    font-family: 'ArabicPoetry';
+}
+
+/*feed*/
+
+.panel {
+    box-shadow: 0 2px 0 rgba(0,0,0,0.075);
+    border-radius: 0;
+    border: 0;
+    margin-bottom: 15px;
+}
+
+    .panel .panel-footer, .panel > :last-child {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .panel .panel-heading, .panel > :first-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+.panel-body {
+    padding: 25px 20px;
+}
+
+.media-block .media-left {
+    display: block;
+    float: left
+}
+
+.media-block .media-right {
+    float: right
+}
+
+.media-block .media-body {
+    display: block;
+    overflow: hidden;
+    width: auto
+}
+
+.text-muted, a.text-muted:hover, a.text-muted:focus {
+    color: #acacac;
+}
+
+.text-sm {
+    font-size: 0.9em;
+}
+
+.text-5x, .text-4x, .text-5x, .text-2x, .text-lg, .text-sm, .text-xs {
+    line-height: 1.25;
+}
+
+.img-sm {
+    width: 46px;
+    height: 46px;
+}
+
+/*boot alt*/
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 750px
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 970px
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 1170px
+    }
+}
+
+.col-md-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width:100%;
+}
+
+
+/*add post*/
+
+.panel-heading {
+    font-size: 50pt;
+}
+
+.form-container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.lbl {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+    font-family: 'Consolas';
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.subsub {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .subsub:hover {
+        background-color: #0056b3;
+    }
+
+    .subsub:active {
+        background-color: #004494;
+    }

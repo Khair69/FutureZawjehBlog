@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using FutureZawjehBlog.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace FutureZawjehBlog.Data
@@ -9,5 +10,7 @@ namespace FutureZawjehBlog.Data
             : base(options)
         {
         }
+
+        public DbSet<Post> posts { get; set; }
     }
 }

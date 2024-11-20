@@ -1,0 +1,31 @@
+﻿@model PostsViewModel
+@using Humanizer
+
+@{
+    ViewData["Title"] = "Home Feed";
+}
+
+
+<div class="container bootdey">
+    <div class="col-md-12 bootstrap snippets">
+        <div class="panel">
+            <div class="panel-body">
+                @foreach (var p in Model.Posts)
+                {
+                    <div class="media-block">
+                        <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture" src="https://bootdey.com/img/Content/avatar/avatar1.png"></a>
+                        <div class="media-body">
+                            <div class="mar-btm">
+                                <p class="text-semibold media-heading box-inline">@p.UserId</p>
+                                <p class="text-muted text-sm">@p.TimeOfPost.Humanize()</p>
+                            </div>
+                            <h4>@p.Title</h4>
+                            <p>@p.Content</p>
+                            <hr>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
